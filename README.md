@@ -60,3 +60,60 @@ Therefore, the estimated population size of the fish is 100.
 
 Again, it is important to note that this is just an estimate and the actual population size could be different. You may want to repeat the study several times or use other methods to validate the estimate
 ````
+
+## python code
+
+````
+def yamane_formula(n: int, N: int) -> int:
+    return n / (1 - (n - 1) / N)
+````
+The function takes two arguments:
+
+n: the sample size
+N: the estimated population size
+It returns the estimated population size based on the Yamane formula.
+
+You can use the function like this:
+
+````
+sample_size = 50
+estimated_population_size = yamane_formula(sample_size, estimated_population_size)
+print(estimated_population_size)
+````
+
+This will print the estimated population size based on a sample size of 50.
+
+## nodejs code
+
+````
+function yamaneFormula(n, N) {
+  return n / (1 - (n - 1) / N);
+}
+````
+
+You can use the function like this:
+
+
+````
+const sampleSize = 50;
+const estimatedPopulationSize = yamaneFormula(sampleSize, estimatedPopulationSize);
+console.log(estimatedPopulationSize);
+````
+
+## php code
+
+````
+function yamane_formula($n, $N) {
+  return $n / (1 - ($n - 1) / $N);
+}
+````
+
+You can use the function like this:
+
+````
+$sample_size = 50;
+$estimated_population_size = yamane_formula($sample_size, $estimated_population_size);
+echo $estimated_population_size;
+````
+
+This will print the estimated population size based on a sample size of 50.
